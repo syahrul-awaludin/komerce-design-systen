@@ -1,0 +1,11 @@
+.accordion { display: flex; flex-direction: column; font-family: 'Plus Jakarta Sans', sans-serif; }
+.item { border: 1px solid var(--color-border, #e5e5e5); background: var(--color-bg-white, #ffffff); border-bottom: none; }
+.item:last-child { border-bottom: 1px solid var(--color-border, #e5e5e5); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+.item:first-child { border-top-left-radius: 8px; border-top-right-radius: 8px; }
+.header { padding: 8px 16px; cursor: pointer; display: flex; align-items: center; justify-content: space-between; color: var(--color-text-neutral, #0a0a0a); font-size: 14px; font-weight: 500; min-height: 40px; }
+.headerDisabled { opacity: 0.5; cursor: not-allowed; }
+.chevron { transition: transform 0.3s ease; color: var(--color-text-neutral, #0a0a0a); }
+.chevronOpen { transform: rotate(180deg); }
+.contentWrapper { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.contentWrapperOpen { max-height: 1000px; }
+.content { padding: 0 16px 16px; font-size: 14px; line-height: 21px; color: var(--color-text-secondary, #737373); }

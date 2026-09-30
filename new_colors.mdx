@@ -1,0 +1,81 @@
+# Colors
+
+Color is the foundation of the Komerce Design System. Our color system is designed to ensure accessibility, maintain consistency, and reinforce Komerce's brand identity across all platforms.
+
+## Core Identity
+
+<br />
+
+<SNBlock packageId="io.supernova.block.token-color-ramps" variantId="default" columns={1}>
+  <SNItem>
+    <SNPropToken name="tokens" value={[
+      { entityId: "09d38a9a-615f-4f87-821c-189334113eaf", entityType: "Token" },
+      { entityId: "59ba2da9-0348-490b-baff-3ab8521111b7", entityType: "Token" },
+      { entityId: "d62e6d86-4d2e-412a-ac04-b0570b4dc5be", entityType: "Token" },
+      { entityId: "2b974755-889e-40da-a13b-fd266eda9f84", entityType: "Token" },
+      { entityId: "ad64568d-a8b3-4a1d-848e-cad3faaa26a5", entityType: "Token" },
+      { entityId: "2f360d29-ee0c-4c3d-82c9-324f0bcab802", entityType: "Token" },
+      { entityId: "be96633c-9d3c-4bae-bcd7-fc5430486574", entityType: "Token" },
+      { entityId: "b5418588-cfb7-45ac-9bbc-12dcad428526", entityType: "Token" },
+      { entityId: "d4f8d663-2573-4795-be6a-1266411fa5d9", entityType: "Token" }
+    ]} />
+  </SNItem>
+</SNBlock>
+
+<br />
+
+- **Primary:** `#e55514` (Komerce Orange) The core brand color. Used for primary buttons, important actions, and active states. *CSS Variable:* `--color-primary`
+
+---
+
+## Light and Dark Mode Context
+
+Komerce Design System is built with structural readiness for multi-mode theming (Light and Dark Mode).
+
+To achieve this, we use a two-tier token system:
+
+1. **Primitive Colors (Base Palette):** Static values that never change (e.g., `orange-500` is always `#e55514`, `gray-900` is always `#0a0a0a`).
+2. **Semantic Colors (Theme Tokens):** Contextual values that switch automatically based on the user's active theme. For example, `--color-background` points to `white` in Light Mode, but switches to `gray-900` in Dark Mode.
+
+> **Best Practice:** Never hardcode HEX values or Primitive colors directly into your components. Always use Semantic Colors so that your UI can gracefully transition between Light and Dark modes.
+
+---
+
+## Background Colors (Semantic)
+
+- **Background (Main):** The default color for app backgrounds and card surfaces. *CSS Variable:* `--color-background`
+  - *Light Mode:* `#ffffff` (White)
+  - *Dark Mode:* `#0a0a0a` (Deep Gray)
+- **Secondary Background:** Used for grouped areas, off-canvas menus, or disabled elements. *CSS Variable:* `--color-background-secondary`
+  - *Light Mode:* `#f5f5f5`
+  - *Dark Mode:* `#171717`
+
+## Semantic Status Colors
+
+Semantic colors communicate specific meanings or states to the user. These colors adjust their lightness/saturation slightly in Dark Mode to maintain accessibility contrast.
+
+- **Success:** `#22c55e` Used for success messages, confirmations, or positive states. *CSS Variable:* `--color-success`
+- **Warning:** `#f59e0b` Used for warnings or actions requiring attention. *CSS Variable:* `--color-warning`
+- **Destructive / Error:** `#dc2626` Used for destructive actions (e.g., delete), error messages, or failed states. *CSS Variable:* `--color-destructive`
+- **Info:** `#3b82f6` Used for neutral information or highlights. *CSS Variable:* `--color-info`
+
+## Text Colors
+
+- **Text Primary:** The main color for reading text and headings, requiring the highest contrast. *CSS Variable:* `--color-text-primary`
+  - *Light Mode:* `#0a0a0a`
+  - *Dark Mode:* `#ffffff`
+- **Text Secondary:** Used for secondary text, captions, or supporting information. *CSS Variable:* `--color-text-secondary`
+  - *Light Mode:* `#737373`
+  - *Dark Mode:* `#a3a3a3`
+- **Text Placeholder:** Used for placeholder text in form inputs. *CSS Variable:* `--color-text-placeholder`
+  - *Light Mode:* `#525252`
+  - *Dark Mode:* `#525252`
+
+## Borders & UI Elements
+
+- **Border:** Used for dividers, input outlines, and component boundaries. *CSS Variable:* `--color-border`
+  - *Light Mode:* `#e5e5e5`
+  - *Dark Mode:* `#262626`
+- **Focus Ring Primary:** `#ffb088` Used for focus rings (outlines) when an interactive element is focused via keyboard. *CSS Variable:* `--color-focus-ring-primary`
+- **Focus Ring Error:** `#fda4af` Used for focus rings when an input in an error state is focused. *CSS Variable:* `--color-focus-ring-error`
+- **Shadow Color:** `rgba(0,0,0,0.1)` / `rgba(0,0,0,0.05)` Used as the base color for drop shadows. Opacity often increases in Dark mode for better depth perception. *CSS Variable:* `--color-shadow`

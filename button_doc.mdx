@@ -1,0 +1,37 @@
+# Button
+
+Buttons are used to initialize an action, either in the background or foreground of an experience.
+
+## Best Practices
+
+- **Primary actions**: Use the Primary variant for the main action on a page.
+- **Secondary actions**: Use the Secondary or Outline variant for alternative actions.
+- **Destructive actions**: Use the Destructive variant for irreversible or dangerous actions (e.g., delete).
+- **Icons**: You can add left or right icons to clarify the button's intent.
+
+## Variants
+
+- **Primary**: `variant="primary"` - Solid orange background (`#f95e16`), white text.
+- **Secondary**: `variant="secondary"` - Solid gray background (`#f5f5f5`), dark text.
+- **Outline**: `variant="outline"` - Transparent background, gray border, dark text.
+- **Destructive**: `variant="destructive"` - Solid red background (`#dc2626`), white text.
+- **Link**: `variant="link"` - Transparent background, orange text, behaves like a hyperlink.
+
+## Sizes
+
+- **Large**: `size="large"` (Height: 40px)
+- **Regular**: `size="regular"` (Height: 36px) - *Default*
+- **Small**: `size="small"` (Height: 32px)
+- **Mini**: `size="mini"` (Height: 24px)
+
+## Properties
+
+| Property | Type | Default | Description |
+|---|---|---|---|
+| `variant` | `'primary' \| 'secondary' \| 'outline' \| 'destructive' \| 'link'` | `'primary'` | The visual style of the button |
+| `size` | `'mini' \| 'small' \| 'regular' \| 'large'` | `'regular'` | The size of the button |
+| `roundness` | `'default' \| 'round'` | `'default'` | The border radius style |
+| `disabled` | `boolean` | `false` | Whether the button is interactive |
+| `leftIcon` | `ReactNode` | - | Icon placed before the text |
+| `rightIcon` | `ReactNode` | - | Icon placed after the text |
+

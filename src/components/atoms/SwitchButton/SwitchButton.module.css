@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  gap: var(--tabs-all-space-container-gap-default, 0px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--main-menu-all-space-container-padding-default-left, 0px);
+  position: relative;
+}
+.container.disabled {
+  opacity: calc(var(--switch-disabled-opacity-container-opacity-disabled, 50) / 100);
+}
+
+.switchWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--switch-all-space-state-gap-default, 10px);
+  align-items: flex-start;
+  padding: var(--main-menu-all-space-container-padding-default-left, 0px);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.switch {
+  position: relative;
+  overflow: clip;
+  border-radius: var(--stepper-default-radius-indicator-corner-default, 9999px);
+  flex-shrink: 0;
+}
+.switch.off { background-color: var(--switch-off-color-track-background-default, #e5e5e5); }
+.switch.on { background-color: var(--switch-on-color-track-background-default, #e55514); }
+
+.switch.small { height: 20px; width: 34px; }
+.switch.medium { height: 24px; width: 44px; }
+.switch.large { height: 32px; width: 52px; }
+
+.thumb {
+  position: absolute;
+  top: 2px;
+  border-radius: var(--stepper-default-radius-indicator-corner-default, 9999px);
+  background-color: var(--switch-off-color-thumb-background-default, white);
+  transition: left 0.2s ease-in-out;
+}
+
+.thumb.off { left: 2px; }
+
+.thumb.on.small { left: 16px; }
+.thumb.on.medium { left: 22px; }
+.thumb.on.large { left: 22px; }
+
+.thumb.small { width: 16px; height: 16px; }
+.thumb.medium { width: 20px; height: 20px; }
+.thumb.large { width: 28px; height: 28px; }
+
+.labelWrapper {
+  display: flex;
+  gap: var(--switch-all-space-label-gap-default, 10px);
+  align-items: center;
+  justify-content: center;
+  padding: var(--main-menu-all-space-container-padding-default-left, 0px) var(--switch-all-space-label-padding-default-x, 8px);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.label {
+  word-break: break-word;
+  font-family: var(--typography-font-family-body, 'Plus Jakarta Sans');
+  font-weight: 500;
+  position: relative;
+  flex-shrink: 0;
+  color: var(--input-text-area-color-label-foreground-filled, #0a0a0a);
+  letter-spacing: var(--typography-paragraph-body-letter-spacing, 0px);
+  white-space: nowrap;
+}
+.label.small {
+  line-height: var(--typography-paragraph-caption-line-height, 16px);
+  font-size: var(--typography-paragraph-caption-font-size, 12px);
+}
+.label.medium {
+  line-height: var(--typography-paragraph-body-line-height, 21px);
+  font-size: var(--typography-paragraph-body-font-size, 14px);
+}
+.label.large {
+  line-height: var(--typography-paragraph-title-line-height, 24px);
+  font-size: var(--typography-paragraph-title-font-size, 16px);
+}

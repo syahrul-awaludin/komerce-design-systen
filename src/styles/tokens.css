@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --button-primary-color-label-foreground-default: #ffffff;
+  --typography-paragraph-body-letter-spacing: 0px;
+  --typography-paragraph-body-font-size: 14px;
+  --typography-paragraph-weight-medium: Medium;
+  --typography-font-family-body: Plus Jakarta Sans;
+  --typography-paragraph-body-line-height: 21px;
+  --button-regular-space-container-gap-default: 8px;
+  --button-regular-space-container-padding-default-x: 16px;
+  --button-regular-space-container-padding-default-y: 8px;
+  --button-round-size-container-radius-default: 9999px;
+  --button-regular-size-container-height-default: 36px;
+  --button-primary-color-container-background-default: #e55514;
+  --button-secondary-color-label-foreground-default: #171717;
+  --button-secondary-color-container-background-default: #f5f5f5;
+  --button-destructive-color-label-foreground-default: #ffffff;
+  --button-destructive-color-container-background-default: #dc2626;
+  --switch-all-size-thumb-radius-default: 9999px;
+  --switch-on-color-thumb-background-default: #fafafa;
+  --switch-all-size-track-radius-default: 9999px;
+  --switch-on-color-track-background-default: #e55514;
+  --switch-all-space-state-gap-default: 10px;
+  --switch-off-color-thumb-background-default: #ffffff;
+  --switch-off-color-track-background-default: #e5e5e5;
+  --checkbox-medium-size-container-radius-default: 6px;
+  --checkbox-default-size-container-border-width-default: 1px;
+  --checkbox-on-color-container-background-default: #e55514;
+  --checkbox-medium-space-container-gap-default: 8px;
+  --checkbox-off-color-container-background-default: #ffffff;
+  --checkbox-off-color-container-border-default: #e5e5e5;
+  --sizing-border-width-default: 1px;
+  --radio-button-on-color-indicator-fill-default: #e55514;
+  --radio-button-medium-size-circle-width-default: 12px;
+  --radio-button-all-radius-circle-border-radius-default: 9999px;
+  --radio-button-all-size-circle-border-width-default: 1px;
+  --radio-button-all-color-circle-background-default: #ffffff;
+  --radio-button-all-color-circle-border-default: #e5e5e5;
+  --radio-button-all-color-circle-shadow-default: #0000001a;
+  --radio-button-all-shadow-circle-x-default: 0px;
+  --radio-button-all-shadow-circle-y-default: 1px;
+  --radio-button-all-shadow-circle-blur-default: 2px;
+  --radio-button-all-shadow-circle-spread-default: 0px;
+  --radio-button-all-space-container-gap-default: 8px;
+  --fab-primary-color-icon-foreground-default: #fff4ed;
+  --fab-regular-size-icon-size-default: 20px;
+  --fab-regular-space-container-padding-default: 16px;
+  --fab-regular-size-container-height-default: 56px;
+  --fab-all-size-container-radius-default: 9999px;
+  --fab-primary-color-container-background-default: #e55514;
+  --shadows-md-color: #0000001a;
+  --shadows-md-shadow-1-x: 0px;
+  --shadows-md-shadow-1-y: 4px;
+  --shadows-md-shadow-1-blur: 6px;
+  --shadows-md-shadow-1-spread: -1px;
+  --shadows-md-shadow-2-x: 0px;
+  --shadows-md-shadow-2-y: 2px;
+  --shadows-md-shadow-2-blur: 4px;
+  --shadows-md-shadow-2-spread: -2px;
+  --breadcrumb-all-color-item-foreground-default: #737373;
+  --typography-paragraph-weight-regular: Regular;
+  --breadcrumb-all-space-title-gap-default: 10px;
+  --breadcrumb-all-size-separator-stroke-weight-default: 1px;
+  --breadcrumb-all-color-separator-stroke-default: #737373;
+  --breadcrumb-all-color-current-page-foreground-default: #0a0a0a;
+  --breadcrumb-all-space-item-gap-default: 6px;
+  --toast-all-size-icon-stroke-width-default: 1.5px;
+  --toast-success-color-icon-stroke-default: #22c55e;
+  --toast-success-color-label-foreground-default: #22c55e;
+  --typography-paragraph-weight-bold: SemiBold;
+  --toast-all-space-content-gap-default: 6px;
+  --toast-all-color-timestamp-foreground-default: #737373;
+  --typography-paragraph-caption-letter-spacing: 0px;
+  --typography-paragraph-caption-font-size: 12px;
+  --typography-paragraph-caption-line-height: 16px;
+  --toast-all-space-container-gap-default: 6px;
+  --toast-all-space-container-padding-default-x: 12px;
+  --toast-all-space-container-padding-default-y: 8px;
+  --toast-all-size-container-radius-default: 9999px;
+  --toast-all-color-container-background-default: #ffffff;
+  --toast-all-color-container-shadow-color-default: #0000001a;
+  --toast-all-size-container-shadow-1-x-default: 0px;
+  --toast-all-size-container-shadow-1-y-default: 4px;
+  --toast-all-size-container-shadow-1-blur-default: 6px;
+  --toast-all-size-container-shadow-1-spread-default: -1px;
+  --toast-all-size-container-shadow-2-x-default: 0px;
+  --toast-all-size-container-shadow-2-y-default: 2px;
+  --toast-all-size-container-shadow-2-blur-default: 4px;
+  --toast-all-size-container-shadow-2-spread-default: -2px;
+  --select-all-color-trigger-foreground-placeholder: #737373;
+  --select-all-space-text-wrapper-gap-default: 10px;
+  --select-all-size-icon-stroke-width-default: 1px;
+  --select-all-color-trigger-icon-default: #737373;
+  --select-all-space-trigger-padding-default-x: 12px;
+  --select-all-space-trigger-padding-default-y: 8px;
+  --select-all-size-trigger-radius-default: 8px;
+  --select-all-size-trigger-border-width-default: 1px;
+  --select-all-color-trigger-background-default: #ffffff;
+  --select-all-color-trigger-border-default: #e5e5e5;
+  --shadows-xs-color: #0000000d;
+  --shadows-xs-x: 0px;
+  --shadows-xs-y: 1px;
+  --shadows-xs-blur: 2px;
+  --shadows-xs-spread: 0px;
+  --accordion-all-color-title-foreground-default: #0a0a0a;
+  --accordion-all-space-question-gap-default: 10px;
+  --accordion-all-color-icon-stroke-default: #0a0a0a;
+  --accordion-all-space-button-padding-default-x: 8px;
+  --accordion-all-space-button-padding-default-y: 16px;
+  --accordion-all-size-container-border-width-default: 1px;
+  --accordion-all-color-container-background-default: #ffffff;
+  --accordion-all-color-container-border-default: #e5e5e5;
+  --spacing-medium: 12;
+  --spacing-x-large: 20px;
+
+  /* Shadows */
+  --shadow-2xs: 0 1px 0px 0px rgba(0,0,0,0.05);
+  --shadow-xs: 0 1px 2px 0px rgba(0,0,0,0.05);
+  --shadow-sm: 0 1px 3px 0px rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0,0,0,0.25);
+
+  /* Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+
+
+  /* Focus Rings */
+  --color-focus-ring-primary: #ffb088;
+  --color-focus-ring: #d4d4d4;
+  --color-focus-ring-error: #fda4af;
+  
+  --focus-ring-primary: 0 0 0 3px var(--color-focus-ring-primary);
+  --focus-ring-default: 0 0 0 3px var(--color-focus-ring);
+  --focus-ring-error: 0 0 0 3px var(--color-focus-ring-error);
+
+}
+/* Typography Tokens */
+:root {
+  --font-family-body: 'Plus Jakarta Sans', sans-serif;
+
+  /* Body/Regular */
+  --typography-body-regular-font-size: 14px;
+  --typography-body-regular-font-weight: 400;
+  --typography-body-regular-line-height: 21px;
+  --typography-body-regular-letter-spacing: 0px;
+
+  /* Body/Medium */
+  --typography-body-medium-font-size: 14px;
+  --typography-body-medium-font-weight: 500;
+  --typography-body-medium-line-height: 21px;
+  --typography-body-medium-letter-spacing: 0px;
+
+  /* Body/Bold */
+  --typography-body-bold-font-size: 14px;
+  --typography-body-bold-font-weight: 600;
+  --typography-body-bold-line-height: 21px;
+  --typography-body-bold-letter-spacing: 0px;
+
+  /* Caption/Regular */
+  --typography-caption-regular-font-size: 12px;
+  --typography-caption-regular-font-weight: 400;
+  --typography-caption-regular-line-height: 16px;
+  --typography-caption-regular-letter-spacing: 0px;
+
+  /* Title/Medium */
+  --typography-title-medium-font-size: 16px;
+  --typography-title-medium-font-weight: 500;
+  --typography-title-medium-line-height: 24px;
+  
+  /* Small/Regular */
+  --typography-small-regular-font-size: 20px;
+  --typography-small-regular-font-weight: 400;
+  --typography-small-regular-line-height: 28.6px;
+
+  /* Shadows */
+  --shadow-2xs: 0 1px 0px 0px rgba(0, 0, 0, 0.05);
+  --shadow-xs: 0 1px 2px 0px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* Focus Rings */
+  --focus-ring-primary: 0 0 0 3px #ffb088;
+  --focus-ring-default: 0 0 0 3px #d4d4d4;
+  --focus-ring-error: 0 0 0 3px #fda4af;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+  
+  /* Spacing */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+}

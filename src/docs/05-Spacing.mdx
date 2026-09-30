@@ -1,0 +1,27 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Spacing" />
+
+# Spacing
+
+Sistem jarak (spacing) pada Komerce Design System.
+
+<div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '32px' }}>
+  {[
+    { name: '1', px: '4px', rem: '0.25rem' },
+    { name: '2', px: '8px', rem: '0.5rem' },
+    { name: '3', px: '12px', rem: '0.75rem' },
+    { name: '4', px: '16px', rem: '1rem' },
+    { name: '5', px: '20px', rem: '1.25rem' },
+    { name: '6', px: '24px', rem: '1.5rem' },
+    { name: '8', px: '32px', rem: '2rem' },
+    { name: '10', px: '40px', rem: '2.5rem' },
+    { name: '12', px: '48px', rem: '3rem' },
+  ].map((space) => (
+    <div key={space.name} style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+      <div style={{ width: '60px', fontWeight: 600 }}>{space.name}</div>
+      <div style={{ width: '60px', fontSize: '14px', color: '#737373' }}>{space.px}</div>
+      <div style={{ width: space.px, height: '16px', backgroundColor: 'var(--button-primary-color-container-background-default, #e55514)', borderRadius: '2px' }} />
+    </div>
+  ))}
+</div>

@@ -1,0 +1,22 @@
+export type BubbleChatProps = {
+  className?: string;
+  customText?: string;
+  direction?: "Incoming" | "Outgoing";
+  errorStatusText?: string;
+  fileMetadata?: string;
+  fileName?: string;
+  imageMetadata?: string;
+  imageName?: string;
+  incomingStatusText?: string;
+  incomingTimeText?: string;
+  outgoingStatusText?: string;
+  outgoingTimeText?: string;
+  showCustomText?: boolean;
+  showStatus?: boolean;
+  showTime?: boolean;
+  state?: "Default" | "Error";
+  textMessage?: string;
+  type?: "Text" | "File" | "Image" | "Video";
+  videoMetadata?: string;
+  videoName?: string;
+};

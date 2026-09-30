@@ -1,0 +1,40 @@
+.switch {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-neutral-200, #e5e5e5);
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  position: relative;
+}
+
+.switch.checked {
+  background: var(--button-primary-color-container-background-default, #e55514);
+}
+
+.switch:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.thumb {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  position: absolute;
+}
+
+/* Sizes matching Figma */
+.small { width: 34px; height: 20px; }
+.small .thumb { width: 16px; height: 16px; left: 2px; }
+.small.checked .thumb { transform: translateX(14px); }
+
+.medium { width: 44px; height: 24px; }
+.medium .thumb { width: 20px; height: 20px; left: 2px; }
+.medium.checked .thumb { transform: translateX(20px); }
+
+.large { width: 52px; height: 32px; }
+.large .thumb { width: 28px; height: 28px; left: 2px; }
+.large.checked .thumb { transform: translateX(20px); }

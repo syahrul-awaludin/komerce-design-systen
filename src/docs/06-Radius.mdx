@@ -1,0 +1,26 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Radius" />
+
+# Radius
+
+Border radius (lengkungan sudut) yang digunakan dalam komponen Komerce.
+
+<div style={{ display: 'flex', gap: '32px', flexWrap: 'wrap', marginTop: '32px' }}>
+  {[
+    { name: 'sm', px: '4px' },
+    { name: 'md', px: '6px' },
+    { name: 'lg', px: '8px' },
+    { name: 'xl', px: '12px' },
+    { name: 'full', px: '9999px' },
+  ].map((radius) => (
+    <div key={radius.name} style={{ width: '120px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div style={{
+        width: '80px', height: '80px', backgroundColor: 'var(--button-primary-color-container-background-default, #e55514)', 
+        borderRadius: radius.px, marginBottom: '16px'
+      }} />
+      <span style={{ fontWeight: 600, fontSize: '14px' }}>{radius.name}</span>
+      <code style={{ fontSize: '12px', marginTop: '4px', background: 'transparent' }}>{radius.px}</code>
+    </div>
+  ))}
+</div>

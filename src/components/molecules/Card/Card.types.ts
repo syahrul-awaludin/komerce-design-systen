@@ -1,0 +1,1 @@
+export interface CardProps { type?: 'default' | 'progress' | 'comparison' | 'sparkline' | 'radial' | 'minibar' | 'target' | 'list' | 'multimetric' | 'leaderboard'; title: string; value: string; subtitle?: string; change?: number; data?: number; }

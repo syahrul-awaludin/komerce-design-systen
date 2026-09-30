@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  gap: var(--radio-button-all-space-container-gap-default, 8px);
+  padding: var(--radio-button-all-shadow-circle-x-default, 0px);
+  position: relative;
+  align-items: center;
+}
+.container.disabled {
+  opacity: calc(var(--radio-button-disabled-opacity-container-opacity-disabled, 50) / 100);
+}
+.container.medium, .container.small {
+  align-items: center;
+}
+.container.large {
+  justify-content: center;
+}
+
+.circle {
+  background-color: var(--radio-button-all-color-circle-background-default, white);
+  border: var(--radio-button-all-shadow-circle-y-default, 1px) solid var(--radio-button-all-color-circle-border-default, #e5e5e5);
+  position: relative;
+  border-radius: var(--radio-button-all-radius-circle-border-radius-default, 9999px);
+  box-shadow: var(--radio-button-all-shadow-circle-x-default, 0px) var(--radio-button-all-shadow-circle-y-default, 1px) var(--radio-button-all-shadow-circle-blur-default, 2px) var(--radio-button-all-shadow-circle-spread-default, 0px) var(--radio-button-all-color-circle-shadow-default, rgba(0,0,0,0.1));
+  flex-shrink: 0;
+}
+.circle.small { width: 12px; height: 12px; }
+.circle.medium { width: 12px; height: 12px; }
+.circle.large { width: 16px; height: 16px; }
+
+.circle.stateOn {
+  overflow: clip;
+}
+
+.innerCircleWrapper {
+  position: absolute;
+}
+.innerCircleWrapper.small { left: 2px; top: 2px; width: 6px; height: 6px; }
+.innerCircleWrapper.medium { left: 1px; top: 1px; width: 8px; height: 8px; }
+.innerCircleWrapper.large { left: 2px; top: 2px; width: 10px; height: 10px; }
+
+.innerCircle {
+  background-color: var(--radio-button-on-color-circle-background-default, #0a0a0a);
+  border-radius: 9999px;
+  width: 100%;
+  height: 100%;
+}
+
+.label {
+  word-break: break-word;
+  font-family: var(--typography-font-family-body, 'Plus Jakarta Sans');
+  font-weight: 400;
+  position: relative;
+  flex-shrink: 0;
+  color: var(--radio-button-all-color-label-foreground-default, #0a0a0a);
+  letter-spacing: var(--typography-paragraph-body-letter-spacing, 0px);
+  white-space: nowrap;
+}
+.label.small {
+  line-height: var(--typography-paragraph-caption-line-height, 16px);
+  font-size: var(--typography-paragraph-caption-font-size, 12px);
+}
+.label.medium {
+  line-height: var(--typography-paragraph-body-line-height, 21px);
+  font-size: var(--typography-paragraph-body-font-size, 14px);
+}
+.label.large {
+  line-height: var(--typography-paragraph-title-line-height, 24px);
+  font-size: var(--typography-paragraph-title-font-size, 16px);
+}

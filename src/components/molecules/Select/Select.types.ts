@@ -1,0 +1,2 @@
+export interface SelectOption { label: string; value: string; }
+export interface SelectProps { options: SelectOption[]; placeholder?: string; value?: string; onChange?: (value: string) => void; disabled?: boolean; error?: boolean; }

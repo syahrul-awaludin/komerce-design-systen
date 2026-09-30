@@ -1,0 +1,58 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+
+<Meta title="Foundations/Typography" />
+
+# Typography
+
+**Font Family:** Plus Jakarta Sans
+
+export const typography = {
+  type: {
+    primary: '"Plus Jakarta Sans", sans-serif',
+  },
+  weight: {
+    regular: '400',
+    medium: '500',
+    semibold: '600',
+    bold: '700',
+  },
+  size: {
+    s1: 12,
+    s2: 14,
+    s3: 16,
+    m1: 20,
+    m2: 24,
+    l1: 32,
+    l2: 40,
+    l3: 48,
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+## Headings
+
+<Typeset
+  fontSizes={[
+    typography.size.l3,
+    typography.size.l2,
+    typography.size.l1,
+    typography.size.m2,
+  ]}
+  fontWeight={typography.weight.bold}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+## Body
+
+<Typeset
+  fontSizes={[
+    typography.size.s3,
+    typography.size.s2,
+    typography.size.s1,
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>

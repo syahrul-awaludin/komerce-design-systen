@@ -1,0 +1,11 @@
+{
+  "designSystemId": "876272",
+  "storybook": {
+    "designSystemId": "876272",
+    "from": "./storybook-static",
+    "name": "komerce-design-system",
+    "brandId": "60c0d7ef-3926-4bac-98d2-a98faa06eb8b",
+    "sourceId": "4c437917-a2b4-4442-85d2-d240bbd73197",
+    "publicAccess": false
+  }
+}
